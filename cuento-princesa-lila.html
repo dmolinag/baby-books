@@ -3,61 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La princesa Lila comparte</title>
+<title>La princesa Lila y el jardín mágico</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif;
-    background: #fde7f3;
+    background: linear-gradient(160deg, #fde7f3 0%, #e7e9fd 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 24px 16px;
     color: #4a2a5a;
   }
   h1 {
-    font-size: 2rem;
-    color: #d6468f;
+    font-size: 2.1rem;
+    color: #c0398a;
     text-align: center;
-    margin: 10px 0 24px;
+    margin: 10px 0 6px;
     text-shadow: 2px 2px 0 #fff;
+    max-width: 560px;
+  }
+  .subtitle {
+    font-size: 1rem;
+    color: #8a5fb0;
+    text-align: center;
+    margin-bottom: 26px;
   }
   .page {
     background: #ffffff;
     border: 6px solid #ffb3d9;
     border-radius: 28px;
     width: 100%;
-    max-width: 520px;
+    max-width: 560px;
     margin-bottom: 28px;
     padding: 18px;
-    box-shadow: 0 8px 20px rgba(214,70,143,0.2);
+    box-shadow: 0 10px 24px rgba(192,57,138,0.18);
   }
   .page-num {
     display: inline-block;
-    background: #d6468f;
+    background: #c0398a;
     color: #fff;
     font-weight: bold;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 1.1rem;
   }
   svg { width: 100%; height: auto; display: block; border-radius: 18px; }
   .text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.45;
     margin-top: 14px;
     font-weight: bold;
   }
-  .text .big { color: #d6468f; }
+  .text .big { color: #c0398a; }
+  .text .magic { color: #7b4fd6; }
   .end {
-    font-size: 2rem;
-    color: #d6468f;
+    font-size: 2.2rem;
+    color: #c0398a;
     text-align: center;
-    margin: 10px 0 40px;
+    margin: 10px 0 20px;
+  }
+  .moral {
+    background: #fff4fb;
+    border: 3px dashed #ffb3d9;
+    border-radius: 20px;
+    max-width: 560px;
+    padding: 16px 22px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #8a3f72;
+    margin-bottom: 40px;
   }
   @media print {
     body { background: #fff; }
@@ -67,132 +87,294 @@
 </head>
 <body>
 
-  <h1>👑 La princesa Lila comparte 👑</h1>
+  <h1>👑 La princesa Lila y el jardín mágico 🌸</h1>
+  <p class="subtitle">Un cuento sobre compartir · para los más pequeños</p>
 
   <!-- PÁGINA 1 -->
   <div class="page">
     <span class="page-num">1</span>
     <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-      <!-- cielo y suelo -->
-      <rect width="400" height="300" fill="#e8f4ff"/>
-      <rect y="230" width="400" height="70" fill="#bdeeb0"/>
-      <!-- sol -->
-      <circle cx="350" cy="50" r="30" fill="#ffd93d"/>
+      <rect width="400" height="300" fill="#dff0ff"/>
+      <rect y="235" width="400" height="65" fill="#bdeeb0"/>
+      <!-- sol con rayos -->
+      <circle cx="350" cy="48" r="26" fill="#ffd93d"/>
+      <g stroke="#ffd93d" stroke-width="4" stroke-linecap="round">
+        <line x1="350" y1="8" x2="350" y2="0"/><line x1="312" y1="48" x2="304" y2="48"/>
+        <line x1="322" y1="20" x2="316" y2="14"/><line x1="322" y1="76" x2="316" y2="82"/>
+      </g>
+      <!-- nubes -->
+      <ellipse cx="80" cy="50" rx="34" ry="18" fill="#fff"/>
+      <ellipse cx="110" cy="55" rx="26" ry="15" fill="#fff"/>
       <!-- castillo -->
-      <rect x="150" y="120" width="100" height="110" fill="#f5c0dd"/>
-      <rect x="135" y="100" width="30" height="130" fill="#ef9fc9"/>
-      <rect x="235" y="100" width="30" height="130" fill="#ef9fc9"/>
-      <polygon points="135,100 150,60 165,100" fill="#d6468f"/>
-      <polygon points="235,100 250,60 265,100" fill="#d6468f"/>
-      <polygon points="150,120 200,80 250,120" fill="#d6468f"/>
-      <rect x="185" y="175" width="30" height="55" fill="#8a5a2b" rx="14"/>
+      <rect x="150" y="120" width="100" height="115" fill="#f5c0dd"/>
+      <rect x="135" y="98" width="30" height="137" fill="#ef9fc9"/>
+      <rect x="235" y="98" width="30" height="137" fill="#ef9fc9"/>
+      <polygon points="135,98 150,58 165,98" fill="#c0398a"/>
+      <polygon points="235,98 250,58 265,98" fill="#c0398a"/>
+      <polygon points="150,120 200,78 250,120" fill="#c0398a"/>
+      <rect x="185" y="178" width="30" height="57" fill="#8a5a2b" rx="14"/>
+      <circle cx="207" cy="206" r="2.5" fill="#ffd93d"/>
       <!-- princesa Lila -->
-      <g transform="translate(70,140)">
-        <polygon points="0,110 -22,55 22,55" fill="#c04fe0"/> <!-- vestido -->
-        <circle cx="0" cy="40" r="18" fill="#ffe0bd"/> <!-- cara -->
-        <path d="M-18 36 Q0 10 18 36 L18 28 Q0 2 -18 28 Z" fill="#7a3b1d"/> <!-- pelo -->
-        <polygon points="-14,20 0,2 14,20" fill="#ffd93d"/> <!-- corona -->
-        <circle cx="-7" cy="40" r="2.5" fill="#333"/>
-        <circle cx="7" cy="40" r="2.5" fill="#333"/>
-        <path d="M-6 47 Q0 52 6 47" stroke="#d6468f" stroke-width="2" fill="none"/>
+      <g transform="translate(70,145)">
+        <polygon points="0,105 -22,52 22,52" fill="#c04fe0"/>
+        <circle cx="0" cy="38" r="17" fill="#ffe0bd"/>
+        <path d="M-17 34 Q0 9 17 34 L17 26 Q0 2 -17 26 Z" fill="#7a3b1d"/>
+        <polygon points="-13,18 0,2 13,18" fill="#ffd93d"/>
+        <circle cx="-6" cy="38" r="2.5" fill="#333"/>
+        <circle cx="6" cy="38" r="2.5" fill="#333"/>
+        <path d="M-6 45 Q0 50 6 45" stroke="#c0398a" stroke-width="2" fill="none"/>
       </g>
     </svg>
-    <p class="text">Esta es la princesa <span class="big">Lila</span>.<br>Vive en un castillo rosa.</p>
+    <p class="text">Había una vez una princesa llamada <span class="big">Lila</span>.<br>Vivía en un castillo rosa, sobre una colina verde.</p>
   </div>
 
   <!-- PÁGINA 2 -->
   <div class="page">
     <span class="page-num">2</span>
     <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-      <rect width="400" height="300" fill="#fff3fa"/>
-      <rect y="230" width="400" height="70" fill="#bdeeb0"/>
-      <!-- Lila con muchos juguetes -->
-      <g transform="translate(120,120)">
-        <polygon points="0,110 -26,55 26,55" fill="#c04fe0"/>
-        <circle cx="0" cy="40" r="18" fill="#ffe0bd"/>
-        <path d="M-18 36 Q0 10 18 36 L18 28 Q0 2 -18 28 Z" fill="#7a3b1d"/>
-        <polygon points="-14,20 0,2 14,20" fill="#ffd93d"/>
-        <circle cx="-7" cy="40" r="2.5" fill="#333"/>
-        <circle cx="7" cy="40" r="2.5" fill="#333"/>
-        <path d="M-6 47 Q0 52 6 47" stroke="#d6468f" stroke-width="2" fill="none"/>
+      <rect width="400" height="300" fill="#e9fbe6"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- jardin con flores mágicas -->
+      <g>
+        <circle cx="60" cy="210" r="16" fill="#ff8fc4"/><circle cx="60" cy="210" r="6" fill="#ffd93d"/>
+        <circle cx="120" cy="190" r="16" fill="#ffd93d"/><circle cx="120" cy="190" r="6" fill="#ff8fc4"/>
+        <circle cx="300" cy="200" r="16" fill="#9d7bff"/><circle cx="300" cy="200" r="6" fill="#fff"/>
+        <circle cx="350" cy="215" r="16" fill="#6fd2ff"/><circle cx="350" cy="215" r="6" fill="#ffd93d"/>
       </g>
-      <!-- juguetes -->
-      <circle cx="230" cy="215" r="18" fill="#ff6b6b"/>
-      <circle cx="275" cy="210" r="16" fill="#4dabf7"/>
-      <rect x="300" y="195" width="30" height="30" fill="#ffd93d" rx="4"/>
-      <polygon points="340,225 355,190 370,225" fill="#69db7c"/>
-      <circle cx="210" cy="180" r="12" fill="#ffa94d"/>
+      <!-- destellos de magia -->
+      <g fill="#ffd93d">
+        <polygon points="200,60 204,74 218,78 204,82 200,96 196,82 182,78 196,74"/>
+        <polygon points="150,100 152,108 160,110 152,112 150,120 148,112 140,110 148,108"/>
+        <polygon points="260,90 262,98 270,100 262,102 260,110 258,102 250,100 258,98"/>
+      </g>
+      <!-- Lila mirando el jardin -->
+      <g transform="translate(200,140)">
+        <polygon points="0,95 -22,45 22,45" fill="#c04fe0"/>
+        <circle cx="0" cy="32" r="16" fill="#ffe0bd"/>
+        <path d="M-16 29 Q0 6 16 29 L16 22 Q0 1 -16 22 Z" fill="#7a3b1d"/>
+        <polygon points="-12,15 0,1 12,15" fill="#ffd93d"/>
+        <circle cx="-5" cy="32" r="2.4" fill="#333"/>
+        <circle cx="5" cy="32" r="2.4" fill="#333"/>
+        <path d="M-6 38 Q0 44 6 38" stroke="#c0398a" stroke-width="2" fill="none"/>
+      </g>
     </svg>
-    <p class="text">Lila tiene <span class="big">muchos juguetes</span>.<br>¡Pero juega sola!</p>
+    <p class="text">Detrás del castillo había un <span class="magic">jardín mágico</span>.<br>¡Allí crecían flores que brillaban como estrellas!</p>
   </div>
 
   <!-- PÁGINA 3 -->
   <div class="page">
     <span class="page-num">3</span>
     <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-      <rect width="400" height="300" fill="#eafaf0"/>
-      <rect y="230" width="400" height="70" fill="#bdeeb0"/>
-      <!-- Lila -->
-      <g transform="translate(110,120)">
-        <polygon points="0,110 -24,55 24,55" fill="#c04fe0"/>
-        <circle cx="0" cy="40" r="18" fill="#ffe0bd"/>
-        <path d="M-18 36 Q0 10 18 36 L18 28 Q0 2 -18 28 Z" fill="#7a3b1d"/>
-        <polygon points="-14,20 0,2 14,20" fill="#ffd93d"/>
-        <circle cx="-7" cy="40" r="2.5" fill="#333"/>
-        <circle cx="7" cy="40" r="2.5" fill="#333"/>
-        <path d="M-6 47 Q0 52 6 47" stroke="#d6468f" stroke-width="2" fill="none"/>
+      <rect width="400" height="300" fill="#f3ecff"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- arbol magico con frutas brillantes -->
+      <rect x="190" y="150" width="22" height="90" fill="#8a5a2b"/>
+      <circle cx="200" cy="120" r="60" fill="#6bc47d"/>
+      <circle cx="160" cy="135" r="38" fill="#7ed18f"/>
+      <circle cx="240" cy="135" r="38" fill="#7ed18f"/>
+      <!-- frutas que brillan -->
+      <circle cx="175" cy="115" r="9" fill="#ff6b6b"/>
+      <circle cx="220" cy="110" r="9" fill="#ffd93d"/>
+      <circle cx="200" cy="140" r="9" fill="#9d7bff"/>
+      <circle cx="160" cy="150" r="9" fill="#6fd2ff"/>
+      <circle cx="238" cy="150" r="9" fill="#ff8fc4"/>
+      <!-- destellos -->
+      <g fill="#fff">
+        <polygon points="130,80 132,86 138,88 132,90 130,96 128,90 122,88 128,86"/>
+        <polygon points="270,90 272,96 278,98 272,100 270,106 268,100 262,98 268,96"/>
       </g>
-      <!-- amiga Rosa, carita triste -->
-      <g transform="translate(290,125)">
-        <polygon points="0,105 -22,52 22,52" fill="#4dabf7"/>
-        <circle cx="0" cy="38" r="17" fill="#ffe0bd"/>
-        <path d="M-17 34 Q0 9 17 34 L17 26 Q0 2 -17 26 Z" fill="#2b2b2b"/>
-        <circle cx="-6" cy="38" r="2.5" fill="#333"/>
-        <circle cx="6" cy="38" r="2.5" fill="#333"/>
-        <path d="M-6 48 Q0 43 6 48" stroke="#2b6fb0" stroke-width="2" fill="none"/>
-        <circle cx="-9" cy="44" r="2" fill="#7cc7ff"/> <!-- lagrimita -->
+      <!-- Lila feliz -->
+      <g transform="translate(90,155)">
+        <polygon points="0,85 -20,42 20,42" fill="#c04fe0"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#7a3b1d"/>
+        <polygon points="-11,14 0,1 11,14" fill="#ffd93d"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 41 6 35" stroke="#c0398a" stroke-width="2" fill="none"/>
       </g>
-      <!-- pelota en el medio -->
-      <circle cx="200" cy="215" r="18" fill="#ff6b6b"/>
     </svg>
-    <p class="text">Llega su amiga <span class="big">Rosa</span>.<br>Rosa no tiene juguetes.</p>
+    <p class="text">En el jardín había un <span class="magic">árbol encantado</span>.<br>Daba frutas de colores que sabían a caramelo.<br>¡A Lila le encantaban!</p>
   </div>
 
   <!-- PÁGINA 4 -->
   <div class="page">
     <span class="page-num">4</span>
     <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-      <rect width="400" height="300" fill="#fff6e6"/>
-      <rect y="230" width="400" height="70" fill="#bdeeb0"/>
-      <!-- corazones -->
-      <path d="M200 40 q-10 -14 -22 0 q-10 14 22 30 q32 -16 22 -30 q-12 -14 -22 0 z" fill="#ff8fc4"/>
-      <!-- Lila dando la pelota -->
-      <g transform="translate(115,125)">
-        <polygon points="0,105 -24,52 24,52" fill="#c04fe0"/>
-        <circle cx="0" cy="38" r="17" fill="#ffe0bd"/>
-        <path d="M-17 34 Q0 9 17 34 L17 26 Q0 2 -17 26 Z" fill="#7a3b1d"/>
-        <polygon points="-13,19 0,2 13,19" fill="#ffd93d"/>
-        <circle cx="-6" cy="38" r="2.5" fill="#333"/>
-        <circle cx="6" cy="38" r="2.5" fill="#333"/>
-        <path d="M-6 44 Q0 50 6 44" stroke="#d6468f" stroke-width="2" fill="none"/>
+      <rect width="400" height="300" fill="#eafaf0"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- camino -->
+      <path d="M200 300 Q230 250 200 235 Q170 220 200 180" stroke="#f0d9a8" stroke-width="20" fill="none"/>
+      <!-- Lila -->
+      <g transform="translate(110,155)">
+        <polygon points="0,85 -20,42 20,42" fill="#c04fe0"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#7a3b1d"/>
+        <polygon points="-11,14 0,1 11,14" fill="#ffd93d"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 41 6 35" stroke="#c0398a" stroke-width="2" fill="none"/>
       </g>
-      <!-- Rosa feliz -->
-      <g transform="translate(285,125)">
-        <polygon points="0,105 -22,52 22,52" fill="#4dabf7"/>
-        <circle cx="0" cy="38" r="17" fill="#ffe0bd"/>
-        <path d="M-17 34 Q0 9 17 34 L17 26 Q0 2 -17 26 Z" fill="#2b2b2b"/>
-        <polygon points="-13,19 0,2 13,19" fill="#ffd93d"/>
-        <circle cx="-6" cy="38" r="2.5" fill="#333"/>
-        <circle cx="6" cy="38" r="2.5" fill="#333"/>
-        <path d="M-6 44 Q0 50 6 44" stroke="#2b6fb0" stroke-width="2" fill="none"/>
+      <!-- hada amiga Rosa con alas -->
+      <g transform="translate(285,150)">
+        <ellipse cx="-20" cy="20" rx="16" ry="24" fill="#bfe8ff" opacity="0.8"/>
+        <ellipse cx="20" cy="20" rx="16" ry="24" fill="#bfe8ff" opacity="0.8"/>
+        <polygon points="0,88 -20,44 20,44" fill="#6fd2ff"/>
+        <circle cx="0" cy="32" r="15" fill="#ffe0bd"/>
+        <path d="M-15 29 Q0 7 15 29 L15 22 Q0 2 -15 22 Z" fill="#2b2b2b"/>
+        <circle cx="-5" cy="32" r="2.3" fill="#333"/>
+        <circle cx="5" cy="32" r="2.3" fill="#333"/>
+        <path d="M-5 38 Q0 36 5 38" stroke="#2b6fb0" stroke-width="2" fill="none"/>
+        <!-- varita -->
+        <line x1="18" y1="50" x2="34" y2="34" stroke="#ffd93d" stroke-width="3"/>
+        <polygon points="34,22 37,30 45,33 37,36 34,44 31,36 23,33 31,30" fill="#ffd93d"/>
       </g>
-      <!-- pelota compartida en medio -->
-      <circle cx="200" cy="210" r="18" fill="#ff6b6b"/>
     </svg>
-    <p class="text">Lila dice: <span class="big">¡Toma!</span><br>Juntas juegan felices. 💕</p>
+    <p class="text">Un día llegó un <span class="magic">hada pequeñita</span> llamada <span class="big">Rosa</span>.<br>Venía de muy lejos y tenía mucha, mucha hambre.</p>
+  </div>
+
+  <!-- PÁGINA 5 -->
+  <div class="page">
+    <span class="page-num">5</span>
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#fff0f6"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- arbol con una sola fruta -->
+      <rect x="300" y="150" width="18" height="85" fill="#8a5a2b"/>
+      <circle cx="309" cy="125" r="45" fill="#6bc47d"/>
+      <circle cx="309" cy="118" r="9" fill="#ffd93d"/>
+      <!-- Lila sujetando la fruta -->
+      <g transform="translate(130,150)">
+        <polygon points="0,88 -22,44 22,44" fill="#c04fe0"/>
+        <circle cx="0" cy="32" r="16" fill="#ffe0bd"/>
+        <path d="M-16 29 Q0 6 16 29 L16 22 Q0 1 -16 22 Z" fill="#7a3b1d"/>
+        <polygon points="-12,15 0,1 12,15" fill="#ffd93d"/>
+        <circle cx="-5" cy="32" r="2.4" fill="#333"/>
+        <circle cx="5" cy="32" r="2.4" fill="#333"/>
+        <path d="M-5 39 Q0 36 5 39" stroke="#c0398a" stroke-width="2" fill="none"/>
+        <circle cx="20" cy="50" r="8" fill="#ffd93d"/> <!-- la ultima fruta -->
+      </g>
+      <!-- hada Rosa triste -->
+      <g transform="translate(270,160)">
+        <ellipse cx="-18" cy="18" rx="14" ry="20" fill="#bfe8ff" opacity="0.7"/>
+        <ellipse cx="18" cy="18" rx="14" ry="20" fill="#bfe8ff" opacity="0.7"/>
+        <polygon points="0,78 -18,40 18,40" fill="#6fd2ff"/>
+        <circle cx="0" cy="28" r="14" fill="#ffe0bd"/>
+        <path d="M-14 25 Q0 4 14 25 L14 18 Q0 1 -14 18 Z" fill="#2b2b2b"/>
+        <circle cx="-5" cy="28" r="2.2" fill="#333"/>
+        <circle cx="5" cy="28" r="2.2" fill="#333"/>
+        <path d="M-5 36 Q0 32 5 36" stroke="#2b6fb0" stroke-width="2" fill="none"/>
+        <circle cx="-8" cy="33" r="2" fill="#7cc7ff"/> <!-- lagrima -->
+      </g>
+    </svg>
+    <p class="text">Pero solo quedaba <span class="big">una fruta</span> en el árbol.<br>Lila la miró... y luego miró a Rosa.<br>«¿Qué hago?», pensó.</p>
+  </div>
+
+  <!-- PÁGINA 6 -->
+  <div class="page">
+    <span class="page-num">6</span>
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#fff6e6"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- corazon grande -->
+      <path d="M200 50 q-14 -20 -32 0 q-14 20 32 42 q46 -22 32 -42 q-18 -20 -32 0 z" fill="#ff8fc4"/>
+      <!-- Lila dando la fruta -->
+      <g transform="translate(135,155)">
+        <polygon points="0,85 -20,42 20,42" fill="#c04fe0"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#7a3b1d"/>
+        <polygon points="-11,14 0,1 11,14" fill="#ffd93d"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 41 6 35" stroke="#c0398a" stroke-width="2" fill="none"/>
+        <circle cx="30" cy="44" r="7" fill="#ffd93d"/> <!-- fruta ofrecida -->
+      </g>
+      <!-- hada Rosa feliz -->
+      <g transform="translate(265,155)">
+        <ellipse cx="-18" cy="18" rx="15" ry="22" fill="#bfe8ff" opacity="0.8"/>
+        <ellipse cx="18" cy="18" rx="15" ry="22" fill="#bfe8ff" opacity="0.8"/>
+        <polygon points="0,80 -19,42 19,42" fill="#6fd2ff"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#2b2b2b"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 41 6 35" stroke="#2b6fb0" stroke-width="2" fill="none"/>
+      </g>
+    </svg>
+    <p class="text">Entonces Lila sonrió y dijo:<br>«<span class="big">¡Toma, Rosa! Es para ti.</span>»<br>Y le dio su última fruta.</p>
+  </div>
+
+  <!-- PÁGINA 7 -->
+  <div class="page">
+    <span class="page-num">7</span>
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#f0ecff"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- explosion de magia -->
+      <g fill="#ffd93d">
+        <polygon points="200,90 206,112 228,118 206,124 200,146 194,124 172,118 194,112"/>
+      </g>
+      <g fill="#ff8fc4">
+        <circle cx="120" cy="80" r="5"/><circle cx="290" cy="95" r="5"/>
+        <circle cx="90" cy="150" r="5"/><circle cx="320" cy="150" r="5"/>
+      </g>
+      <g fill="#9d7bff">
+        <circle cx="160" cy="60" r="4"/><circle cx="250" cy="65" r="4"/>
+        <circle cx="140" cy="175" r="4"/><circle cx="270" cy="175" r="4"/>
+      </g>
+      <!-- arbol de nuevo lleno de frutas -->
+      <rect x="192" y="175" width="18" height="60" fill="#8a5a2b"/>
+      <circle cx="200" cy="150" r="42" fill="#6bc47d"/>
+      <circle cx="180" cy="145" r="8" fill="#ff6b6b"/>
+      <circle cx="220" cy="140" r="8" fill="#ffd93d"/>
+      <circle cx="200" cy="160" r="8" fill="#9d7bff"/>
+      <circle cx="175" cy="162" r="8" fill="#6fd2ff"/>
+      <circle cx="225" cy="162" r="8" fill="#ff8fc4"/>
+    </svg>
+    <p class="text">¡De pronto, el árbol brilló con <span class="magic">luz mágica</span>!<br>Por compartir, Rosa el hada lo llenó otra vez...<br>¡de frutas de todos los colores!</p>
+  </div>
+
+  <!-- PÁGINA 8 -->
+  <div class="page">
+    <span class="page-num">8</span>
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#fff3fa"/>
+      <rect y="235" width="400" height="65" fill="#a9e49c"/>
+      <!-- sol -->
+      <circle cx="350" cy="45" r="24" fill="#ffd93d"/>
+      <!-- corazones flotando -->
+      <path d="M90 60 q-7 -10 -16 0 q-7 10 16 21 q23 -11 16 -21 q-9 -10 -16 0 z" fill="#ff8fc4"/>
+      <path d="M300 70 q-6 -8 -13 0 q-6 8 13 17 q19 -9 13 -17 q-7 -8 -13 0 z" fill="#ff8fc4"/>
+      <!-- Lila y Rosa de la mano -->
+      <g transform="translate(150,155)">
+        <polygon points="0,85 -20,42 20,42" fill="#c04fe0"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#7a3b1d"/>
+        <polygon points="-11,14 0,1 11,14" fill="#ffd93d"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 42 6 35" stroke="#c0398a" stroke-width="2.4" fill="none"/>
+      </g>
+      <g transform="translate(240,155)">
+        <ellipse cx="18" cy="18" rx="14" ry="20" fill="#bfe8ff" opacity="0.8"/>
+        <polygon points="0,80 -19,42 19,42" fill="#6fd2ff"/>
+        <circle cx="0" cy="30" r="15" fill="#ffe0bd"/>
+        <path d="M-15 27 Q0 5 15 27 L15 20 Q0 1 -15 20 Z" fill="#2b2b2b"/>
+        <circle cx="-5" cy="30" r="2.3" fill="#333"/>
+        <circle cx="5" cy="30" r="2.3" fill="#333"/>
+        <path d="M-6 35 Q0 42 6 35" stroke="#2b6fb0" stroke-width="2.4" fill="none"/>
+      </g>
+      <!-- manitas unidas -->
+      <circle cx="195" cy="190" r="5" fill="#ffe0bd"/>
+    </svg>
+    <p class="text">Desde ese día, Lila y Rosa fueron <span class="big">mejores amigas</span>.<br>Y comieron frutas mágicas... ¡juntas y felices!</p>
   </div>
 
   <p class="end">🌟 FIN 🌟</p>
+
+  <div class="moral">
+    💛 <strong>Cuando compartimos,<br>la alegría se hace más grande.</strong> 💛
+  </div>
 
 </body>
 </html>

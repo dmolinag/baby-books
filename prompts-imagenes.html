@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompts de imágenes · La princesa Lila y el jardín mágico</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+    background: #faf5fc;
+    color: #3a2a45;
+    line-height: 1.5;
+    padding: 32px 18px;
+  }
+  .sheet {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    color: #c0398a;
+    margin-bottom: 6px;
+  }
+  header p { color: #7b5f90; font-size: 1rem; }
+
+  .howto {
+    background: #fff;
+    border: 2px solid #ffd0ea;
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 26px;
+  }
+  .howto h2 { font-size: 1.15rem; color: #7b4fd6; margin-bottom: 10px; }
+  .howto ol { margin-left: 20px; }
+  .howto li { margin-bottom: 6px; }
+
+  .base-style {
+    background: #f1ecfb;
+    border-left: 5px solid #7b4fd6;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 30px;
+  }
+  .base-style .label { font-weight: bold; color: #7b4fd6; display:block; margin-bottom:6px; }
+
+  .card {
+    background: #fff;
+    border: 2px solid #ffd0ea;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+  }
+  .card .tag {
+    display: inline-block;
+    background: #c0398a;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: .3px;
+  }
+  .card.cover .tag { background: #7b4fd6; }
+  .card.end .tag { background: #e8a33d; }
+  .card h3 { font-size: 1.1rem; color: #3a2a45; margin-bottom: 10px; }
+
+  .prompt {
+    font-family: 'Courier New', monospace;
+    font-size: .92rem;
+    background: #fff8fc;
+    border: 1px dashed #e8a9d1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+  }
+  .es { font-size: .9rem; color: #6b5a78; font-style: italic; }
+
+  .tip {
+    background: #fffbe8;
+    border: 2px solid #ffe9a8;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-top: 10px;
+  }
+  .tip h2 { font-size: 1.1rem; color: #b8860b; margin-bottom: 8px; }
+
+  @media print {
+    body { background: #fff; padding: 0; font-size: 11pt; }
+    .sheet { max-width: 100%; }
+    .card, .howto, .base-style, .tip { box-shadow: none; }
+    .prompt { background: #fafafa; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <h1>🎨 Prompts para ilustrar el cuento</h1>
+    <p>La princesa Lila y el jardín mágico · para generadores de imágenes (DALL·E, Midjourney, Bing, Leonardo…)</p>
+  </header>
+
+  <div class="howto">
+    <h2>📋 Cómo usar estos prompts</h2>
+    <ol>
+      <li>Añade el <strong>Estilo base</strong> al final de CADA prompt para que todas las imágenes se vean iguales.</li>
+      <li>Genera primero la <strong>portada</strong>; en las siguientes añade: <em>"same character design and art style as before"</em>.</li>
+      <li>Describe siempre a Lila igual: <strong>pelo castaño, corona dorada, vestido morado</strong>. Y a Rosa: <strong>hada, pelo negro, vestido azul, alitas</strong>.</li>
+      <li>Guarda las imágenes como <code>portada.png</code>, <code>pagina1.png</code> … <code>pagina8.png</code>, <code>fin.png</code>.</li>
+    </ol>
+  </div>
+
+  <div class="base-style">
+    <span class="label">⭐ ESTILO BASE (añádelo a todos los prompts)</span>
+    <div class="prompt">soft children's picture book illustration, flat vector style, bright cheerful pastel colors, simple rounded shapes, thick clean outlines, cute and friendly, magical fairytale mood, for toddlers, 2D, no text</div>
+    <div class="es">Ilustración suave de libro infantil, estilo vectorial plano, colores pastel vivos y alegres, formas redondeadas simples, contornos gruesos y limpios, tierno y amigable, ambiente de cuento de hadas mágico, para niños pequeños, 2D, sin texto.</div>
+  </div>
+
+  <!-- PORTADA -->
+  <div class="card cover">
+    <span class="tag">PORTADA</span>
+    <h3>Portada del cuento</h3>
+    <div class="prompt">Book cover illustration: a cute little toddler princess named Lila with light brown hair, a golden crown and a purple dress, standing in a magical garden in front of a pink castle; beside her a tiny fairy named Rosa with black hair, a blue dress and delicate wings, holding a sparkling wand; a glowing enchanted tree with colorful fruits, sparkles and floating stars all around, warm dreamy sky. [+ estilo base]</div>
+    <div class="es">Portada: la princesita Lila (pelo castaño, corona dorada, vestido morado) en un jardín mágico frente a un castillo rosa; a su lado el hada Rosa (pelo negro, vestido azul, alitas) con una varita brillante; un árbol encantado con frutas de colores, destellos y estrellas flotando, cielo cálido de ensueño.</div>
+  </div>
+
+  <!-- PÁGINA 1 -->
+  <div class="card">
+    <span class="tag">PÁGINA 1</span>
+    <h3>Lila y su castillo rosa</h3>
+    <div class="prompt">A cute little toddler princess named Lila with light brown hair, golden crown and purple dress, smiling happily in front of a pink castle on a green hill, blue sky, fluffy clouds, bright sun. [+ estilo base]</div>
+    <div class="es">La princesita Lila (pelo castaño, corona dorada, vestido morado) sonriendo frente a un castillo rosa sobre una colina verde, cielo azul, nubes esponjosas, sol brillante.</div>
+  </div>
+
+  <!-- PÁGINA 2 -->
+  <div class="card">
+    <span class="tag">PÁGINA 2</span>
+    <h3>El jardín mágico</h3>
+    <div class="prompt">The toddler princess Lila with brown hair, golden crown and purple dress, standing in a magical garden full of glowing flowers that shine like stars, sparkles floating in the air, behind the pink castle. [+ estilo base]</div>
+    <div class="es">La princesita Lila en un jardín mágico lleno de flores que brillan como estrellas, destellos flotando en el aire, detrás del castillo rosa.</div>
+  </div>
+
+  <!-- PÁGINA 3 -->
+  <div class="card">
+    <span class="tag">PÁGINA 3</span>
+    <h3>El árbol encantado</h3>
+    <div class="prompt">The toddler princess Lila happily looking at an enchanted tree full of glowing colorful fruits (red, yellow, purple, blue, pink) that sparkle like candy, magical sparkles around the tree, green grass. [+ estilo base]</div>
+    <div class="es">La princesita Lila mirando feliz un árbol encantado lleno de frutas de colores que brillan como caramelos (rojas, amarillas, moradas, azules, rosas), destellos mágicos alrededor, hierba verde.</div>
+  </div>
+
+  <!-- PÁGINA 4 -->
+  <div class="card">
+    <span class="tag">PÁGINA 4</span>
+    <h3>Llega el hada Rosa</h3>
+    <div class="prompt">The toddler princess Lila (brown hair, golden crown, purple dress) meeting a tiny cute fairy named Rosa with black hair, a blue dress, delicate translucent wings and a small sparkling wand; Rosa looks tired and hungry after a long journey, soft magical garden background. [+ estilo base]</div>
+    <div class="es">La princesita Lila conociendo a un hada pequeñita y tierna llamada Rosa (pelo negro, vestido azul, alitas translúcidas y una varita brillante); Rosa se ve cansada y hambrienta tras un largo viaje, jardín mágico de fondo.</div>
+  </div>
+
+  <!-- PÁGINA 5 -->
+  <div class="card">
+    <span class="tag">PÁGINA 5</span>
+    <h3>La última fruta</h3>
+    <div class="prompt">The toddler princess Lila holding the very last glowing fruit from an almost empty enchanted tree, looking thoughtful; beside her the little fairy Rosa (black hair, blue dress, wings) looks sad with a tiny tear, soft magical mood. [+ estilo base]</div>
+    <div class="es">La princesita Lila sosteniendo la última fruta brillante de un árbol encantado casi vacío, con gesto pensativo; a su lado el hada Rosa (pelo negro, vestido azul, alitas) con carita triste y una lagrimita, ambiente mágico suave.</div>
+  </div>
+
+  <!-- PÁGINA 6 -->
+  <div class="card">
+    <span class="tag">PÁGINA 6</span>
+    <h3>Lila comparte</h3>
+    <div class="prompt">The toddler princess Lila smiling warmly and giving her last glowing fruit to the little fairy Rosa (black hair, blue dress, wings), who reaches out happily; floating pink hearts above them, warm magical garden. [+ estilo base]</div>
+    <div class="es">La princesita Lila sonriendo con cariño y dándole su última fruta brillante al hada Rosa (pelo negro, vestido azul, alitas), que la recibe feliz; corazones rosas flotando encima, jardín mágico cálido.</div>
+  </div>
+
+  <!-- PÁGINA 7 -->
+  <div class="card">
+    <span class="tag">PÁGINA 7</span>
+    <h3>La magia del árbol</h3>
+    <div class="prompt">The enchanted tree glowing with bright magical light, suddenly full again of many colorful glowing fruits, big burst of golden sparkles and floating stars all around, joyful magical atmosphere. [+ estilo base]</div>
+    <div class="es">El árbol encantado brillando con luz mágica, de pronto lleno otra vez de frutas de colores, un gran estallido de destellos dorados y estrellas flotando alrededor, atmósfera mágica y alegre.</div>
+  </div>
+
+  <!-- PÁGINA 8 -->
+  <div class="card">
+    <span class="tag">PÁGINA 8</span>
+    <h3>Mejores amigas</h3>
+    <div class="prompt">The toddler princess Lila (brown hair, golden crown, purple dress) and the little fairy Rosa (black hair, blue dress, wings) holding hands and smiling together as best friends, eating colorful magical fruits, floating pink hearts, sunny happy magical garden. [+ estilo base]</div>
+    <div class="es">La princesita Lila y el hada Rosa tomadas de la mano, sonriendo juntas como mejores amigas, comiendo frutas mágicas de colores, corazones rosas flotando, jardín mágico soleado y feliz.</div>
+  </div>
+
+  <!-- FIN -->
+  <div class="card end">
+    <span class="tag">PÁGINA "FIN"</span>
+    <h3>Página final</h3>
+    <div class="prompt">A warm "the end" scene: the toddler princess Lila and the little fairy Rosa waving goodbye happily under the glowing enchanted tree, soft sunset sky, many floating stars and hearts, big decorative empty banner at the top for the word to be added later, cozy magical mood. [+ estilo base]</div>
+    <div class="es">Escena de cierre: la princesita Lila y el hada Rosa diciendo adiós felices bajo el árbol encantado brillante, cielo suave de atardecer, muchas estrellas y corazones flotando, un cartel decorativo vacío arriba para poner la palabra después, ambiente mágico y acogedor.</div>
+  </div>
+
+  <div class="tip">
+    <h2>💡 Truco de consistencia</h2>
+    <p>Si tu generador lo permite, usa <strong>la misma "semilla" (seed)</strong> o la opción de "personaje consistente" para que Lila y Rosa se vean idénticas en todas las páginas. Y recuerda añadir siempre al final: <em>"same character design and art style as previous image"</em>.</p>
+  </div>
+
+</div>
+</body>
+</html>

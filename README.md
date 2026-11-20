@@ -28,5 +28,10 @@ Para leerlo, descarga el archivo y ábrelo en cualquier navegador.
 #### Usar imágenes generadas con IA (opcional)
 El cuento ya incluye ilustraciones SVG. Si prefieres usar imágenes generadas con IA
 (DALL·E, Midjourney, Bing Image Creator, etc.), guarda las imágenes como
-`pagina1.png` … `pagina8.png` junto al HTML y sustituye cada bloque `<svg>...</svg>`
-por `<img src="pagina1.png" alt="...">`.
+`portada.png`, `pagina1.png` … `pagina8.png`, `fin.png` junto al HTML y sustituye
+cada bloque `<svg>...</svg>` por `<img src="pagina1.png" alt="...">`.
+
+### 🎨 Prompts de imágenes (para imprimir)
+- **Archivo:** [`prompts-imagenes.html`](prompts-imagenes.html)
+- Contiene los prompts (en inglés + traducción) para **portada, 8 páginas y FIN**, con un estilo base común para que las ilustraciones sean consistentes.
+- **Optimizado para impresión:** ábrelo en el navegador y usa Ctrl+P / Cmd+P (o "Guardar como PDF").
